@@ -18,7 +18,7 @@ export default function LaTeX() {
           PCソフト(Windows)はこちらからダウンロードしてください。
         </p>
         <Button asChild>
-          <a href="https://yanbarukuinauk.github.io/homepage/PC接続度ソフト_byBluetooth_v2.zip" download>
+          <a href="/files/PC接続度ソフト_byBluetooth_v2.zip" download>
             ダウンロード
           </a>
         </Button>
