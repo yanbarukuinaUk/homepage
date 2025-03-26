@@ -18,7 +18,7 @@ function project_1() {
           PCソフト(Windows)はこちらからダウンロードしてください。
         </p>
         {<Button asChild>
-          <Link href="/PC接続度ソフト_byBluetooth_v2.zip" download>
+          <Link href="https://yanbarukuinauk.github.io/homepage/PC接続度ソフト_byBluetooth_v2.zip" download>
             ダウンロード
           </Link>
         </Button>}
