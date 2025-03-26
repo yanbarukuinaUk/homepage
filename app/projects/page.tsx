@@ -44,7 +44,7 @@ export default function ProjectsPage() {
               </div>
               <div className="flex gap-4">
                 <Button asChild>
-                  <Link href={`/second`}>
+                  <Link href={`/project/second`}>
                     プロジェクト詳細を見る
                   </Link>
                 </Button>
