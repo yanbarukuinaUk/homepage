@@ -43,8 +43,10 @@ export default function ProjectsPage() {
                 ))}
               </div>
               <div className="flex gap-4">
-                <Button size="sm" asChild>
-                  <Link href={`/projects/${project.id}`}>詳細を見る</Link>
+                <Button asChild>
+                  <Link href={`/projects/${project.id}`}>
+                    プロジェクト詳細を見る
+                  </Link>
                 </Button>
               </div>
             </CardContent>
