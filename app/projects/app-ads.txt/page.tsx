@@ -11,9 +11,9 @@ function appads() {
     //     ZIPファイルをダウンロード
     //   </Link>
     // </Button>
-    <d>
+    <div>
       google.com, pub-8892921785206094, DIRECT, f08c47fec0942fa0
-    </d>
+    </div>
   );
 }
 
