@@ -5,15 +5,21 @@ import Link from "next/link"
 
 const projects = [
   {
-    id: "project_1",
-    title: "プロジェクト 1",
-    description: "プロジェクト 1 の詳細な説明。",
+    id: "LaTeX_mobile",
+    title: "LaTeX mobile アプリ",
+    description: "スマホで簡単に数式が書けて，PCに送れる",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600",
   },
   {
-    id: "project_2",
-    title: "プロジェクト 2",
-    description: "プロジェクト 2 の詳細な説明。",
+    id: "copipe",
+    title: "コピペアプリ",
+    description: "パソコンのキーボード入力が苦手な人に最適なアプリです！",
+    image: "https://images.unsplash.com/photo-1604014237744-bad3e8c802b9?auto=format&fit=crop&q=80&w=600",
+  },
+  {
+    id: "gakkai_timer",
+    title: "学会・プレゼンタイマー アプリ",
+    description: "同時に3つまでのタイマー(時間/回数)を設定できる",
     image: "https://images.unsplash.com/photo-1604014237744-bad3e8c802b9?auto=format&fit=crop&q=80&w=600",
   },
 ]
