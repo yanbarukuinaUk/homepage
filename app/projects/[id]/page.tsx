@@ -1,9 +1,10 @@
 import { useRouter } from 'next/router'
-import { Card, CardContent } from "@/components/ui/card"  // 相対パスに変更
-import { Badge } from "@/components/ui/badge"  // 相対パスに変更
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import Link from 'next/link'
 
-// 仮のデータ（実際にはAPIやDBから取得する）
+// 仮のプロジェクトデータ
 const projects = [
   {
     id: "project-1",
@@ -22,12 +23,11 @@ const projects = [
 ]
 
 export default function ProjectDetailPage() {
-  // URLのIDパラメータを取得
-  const { query } = useRouter()
-  const { id } = query
+  const router = useRouter()
+  const { id } = router.query  // URLのパラメータ 'id' を取得
 
-  // プロジェクトIDに基づいて該当するプロジェクトを取得
-  const project = projects.find((p) => p.id === id)
+  // プロジェクトデータから、idにマッチするプロジェクトを探す
+  const project = projects.find((project) => project.id === id)
 
   if (!project) {
     return <div>プロジェクトが見つかりませんでした。</div>
@@ -51,11 +51,9 @@ export default function ProjectDetailPage() {
               <Badge key={tag} variant="secondary">{tag}</Badge>
             ))}
           </div>
-          <div className="mt-4">
-            <Link href="/projects">
-              <a className="text-blue-500">戻る</a>
-            </Link>
-          </div>
+          <Button asChild>
+            <Link href="/projects">戻る</Link>
+          </Button>
         </CardContent>
       </Card>
     </div>
