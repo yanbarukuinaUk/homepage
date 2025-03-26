@@ -9,14 +9,12 @@ const projects = [
     title: "プロジェクト 1",
     description: "プロジェクト 1 の詳細な説明。",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
     id: "project_2",
     title: "プロジェクト 2",
     description: "プロジェクト 2 の詳細な説明。",
     image: "https://images.unsplash.com/photo-1604014237744-bad3e8c802b9?auto=format&fit=crop&q=80&w=600",
-    tags: ["React", "JavaScript", "CSS"],
   },
 ]
 
@@ -38,9 +36,7 @@ export default function ProjectsPage() {
               <CardTitle>{project.title}</CardTitle>
               <p className="text-muted-foreground">{project.description}</p>
               <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary">{tag}</Badge>
-                ))}
+
               </div>
               <div className="flex gap-4">
                 <Button asChild>
