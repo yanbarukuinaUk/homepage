@@ -1,5 +1,5 @@
-function project_1() {
+function gakkaitimer() {
   return <div>Second</div>;
 }
 
-export default project_1;
+export default gakkaitimer;

@@ -9,16 +9,22 @@ export default function LaTeX() {
     <div className="container mx-auto px-4 py-16">
       <div className="flex flex-col items-center text-center space-y-8 mb-16">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-          PCソフト (Windows)
+          LaTeX mobile
         </h1>
+        <h3>
+          スマホで入力してPCに転送
+        </h3>
         <p className="mx-auto max-w-[700px] text-lg text-muted-foreground">
-          解凍後にexeファイルを起動してください。
+          PCソフト(Windows)はこちらからダウンロードしてください。
         </p>
-        {/* <Button asChild>
+        {<Button asChild>
           <Link href="/PC接続度ソフト_byBluetooth_v2.zip" download>
             ダウンロード
           </Link>
-        </Button> */}
+        </Button>}
+        <p>
+          解凍後にexeファイルを起動してください。
+        </p>
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
