@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const projects = [
   {
-    title: "プロジェクト 1",
+    title: "プロジェクト 1aaaaaaaaaaaaa",
     description: "プロジェクトの詳細な説明をここに記載します。",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
