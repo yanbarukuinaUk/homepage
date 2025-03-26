@@ -23,15 +23,7 @@ const projects = [
 ]
 
 export default function ProjectDetailPage() {
-  const router = useRouter()
-  const { id } = router.query  // URLのパラメータ 'id' を取得
 
-  // プロジェクトデータから、idにマッチするプロジェクトを探す
-  const project = projects.find((project) => project.id === id)
-
-  if (!project) {
-    return <div>プロジェクトが見つかりませんでした。</div>
-  }
 
   return (
     <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
