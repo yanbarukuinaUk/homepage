@@ -5,7 +5,7 @@ import Link from "next/link"
 
 const projects = [
   {
-    id: "project-1",
+    id: "project_1",
     title: "プロジェクト 1",
     description: "プロジェクト 1 の詳細な説明。",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600",
