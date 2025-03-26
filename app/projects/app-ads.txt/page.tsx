@@ -6,11 +6,14 @@ import Link from "next/link"
 
 function appads() {
   return (
-    <Button asChild>
-      <Link href="/files/app-ads.txt" download>
-        ZIPファイルをダウンロード
-      </Link>
-    </Button>
+    // <Button asChild>
+    //   <Link href="/files/app-ads.txt" download>
+    //     ZIPファイルをダウンロード
+    //   </Link>
+    // </Button>
+    <d>
+      google.com, pub-8892921785206094, DIRECT, f08c47fec0942fa0
+    </d>
   );
 }
 
