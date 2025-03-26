@@ -10,7 +10,14 @@ const projects = [
     description: "プロジェクト 1 の詳細な説明。",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-  }
+  },
+  {
+    id: "project-2",
+    title: "プロジェクト 2",
+    description: "プロジェクト 2 の詳細な説明。",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+  },
 ]
 
 export default function ProjectsPage() {
@@ -18,7 +25,7 @@ export default function ProjectsPage() {
     <div className="container mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold tracking-tighter mb-8">プロジェクト</h1>
       <div className="grid gap-6 md:grid-cols-2">
-        {/* {projects.map((project) => (
+        {projects.map((project) => (
           <Card key={project.id}>
             <CardHeader>
               <img
@@ -37,14 +44,14 @@ export default function ProjectsPage() {
               </div>
               <div className="flex gap-4">
                 <Button asChild>
-                  <Link href={`/projects/${project.id}`}>
+                  <Link href={`/${project.id}`}>
                     プロジェクト詳細を見る
                   </Link>
                 </Button>
               </div>
             </CardContent>
           </Card>
-        ))} */}
+        ))}
       </div>
     </div>
   )
