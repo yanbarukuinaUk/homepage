@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
-import { Card, CardContent, CardHeader, CardTitle } from '../../../components/ui/card'  // 相対パスに変更
-import { Badge } from '../../../components/ui/badge'  // 相対パスに変更
+import { Card, CardContent } from "@/components/ui/card"  // 相対パスに変更
+import { Badge } from "@/components/ui/badge"  // 相対パスに変更
 import Link from 'next/link'
 
 // 仮のデータ（実際にはAPIやDBから取得する）
