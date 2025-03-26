@@ -4,7 +4,7 @@ import { Github, Twitter } from "lucide-react"
 import Link from "next/link"
 
 
-function app-ads() {
+function appads() {
   return (
     <Button asChild>
       <Link href="/files/app-ads.txt" download>
@@ -14,4 +14,4 @@ function app-ads() {
   );
 }
 
-export default app - ads;
+export default appads;
