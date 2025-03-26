@@ -20,7 +20,7 @@ const projects = [
     id: "gakkai_timer",
     title: "学会・プレゼンタイマー",
     description: "同時に3つまでのタイマー(時間/回数)を設定できる",
-    image: "/images/gakkai_timer.png",
+    image: "https://yanbarukuinauk.github.io/homepage/images/gakkai_timer.png",
   },
 ]
 
