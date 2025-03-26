@@ -13,17 +13,7 @@ function gakkaitimer() {
         <h3>
           スマホで入力してPCに転送
         </h3>
-        <p className="mx-auto max-w-[700px] text-lg text-muted-foreground">
-          PCソフト(Windows)はこちらからダウンロードしてください。
-        </p>
-        {<Button asChild>
-          <Link href="/PC接続度ソフト_byBluetooth_v2.zip" download>
-            ダウンロード
-          </Link>
-        </Button>}
-        <p>
-          解凍後にexeファイルを起動してください。
-        </p>
+
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -36,9 +26,6 @@ function gakkaitimer() {
             </p>
           </CardContent>
         </Card>
-      </div>
-
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <Card>
           <CardContent className="p-6">
             <h3 className="font-semibold mb-2">使い方</h3>
@@ -53,17 +40,17 @@ function gakkaitimer() {
 
 
       <div className="mt-16 flex justify-center gap-4">
-        <Button variant="outline" asChild>
+        {/* <Button variant="outline" asChild>
           <Link href="https://github.com/yanbarukuinaUk/WindowsFormsBLEserver" target="_blank">
             <Github className="h-4 w-4" />
             <span className="sr-only">GitHub</span>
           </Link>
-        </Button>
+        </Button> */}
       </div>
 
       <div className="mt-16 text-center">
-        <p className="text-lg font-semibold">価格</p>
-        <p className="text-muted-foreground">数百円/月でサブスクにする予定です。</p>
+        <p className="text-lg font-semibold">基本無料</p>
+        <p className="text-muted-foreground">広告を削除できます</p>
       </div>
     </div>
   );

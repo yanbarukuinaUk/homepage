@@ -8,7 +8,7 @@ export default function Home() {
     <div className="container mx-auto px-4 py-16">
       <div className="flex flex-col items-center text-center space-y-8 mb-16">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-          ようこそ！便利なアプリをみていってください！
+          ようこそ！便利なアプリをどうぞ
         </h1>
         <p className="mx-auto max-w-[700px] text-lg text-muted-foreground">
           個人開発したソフトウェアやプロジェクトをご紹介します。
