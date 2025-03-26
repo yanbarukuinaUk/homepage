@@ -12,7 +12,7 @@ const projects = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
-    id: "project-2",
+    id: "project_2",
     title: "プロジェクト 2",
     description: "プロジェクト 2 の詳細な説明。",
     image: "https://images.unsplash.com/photo-1604014237744-bad3e8c802b9?auto=format&fit=crop&q=80&w=600",
