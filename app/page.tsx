@@ -8,7 +8,7 @@ export default function Home() {
     <div className="container mx-auto px-4 py-16">
       <div className="flex flex-col items-center text-center space-y-8 mb-16">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-          ポートフォリオ & ソフトウェアショーケース
+          ようこそ！便利なアプリをみていってください！
         </h1>
         <p className="mx-auto max-w-[700px] text-lg text-muted-foreground">
           個人開発したソフトウェアやプロジェクトをご紹介します。
@@ -30,9 +30,9 @@ export default function Home() {
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <Card>
           <CardContent className="p-6">
-            <h3 className="font-semibold mb-2">最新のテクノロジー</h3>
+            <h3 className="font-semibold mb-2">様々なスマホアプリ</h3>
             <p className="text-sm text-muted-foreground">
-              Next.js、React、TypeScriptなど、モダンな技術スタックを活用しています。
+              iOSやAndroid向けのアプリを開発しています。bluetoothでPCと連携など
             </p>
           </CardContent>
         </Card>
@@ -40,18 +40,11 @@ export default function Home() {
           <CardContent className="p-6">
             <h3 className="font-semibold mb-2">オープンソース</h3>
             <p className="text-sm text-muted-foreground">
-              多くのプロジェクトをオープンソースとして公開し、コミュニティに貢献しています。
+              連携に必要なPCソフトは，オープンソースとして公開
             </p>
           </CardContent>
         </Card>
-        <Card>
-          <CardContent className="p-6">
-            <h3 className="font-semibold mb-2">品質重視</h3>
-            <p className="text-sm text-muted-foreground">
-              テスト駆動開発とベストプラクティスに従い、高品質なソフトウェアを提供します。
-            </p>
-          </CardContent>
-        </Card>
+
       </div>
 
       <div className="mt-16 flex justify-center gap-4">
