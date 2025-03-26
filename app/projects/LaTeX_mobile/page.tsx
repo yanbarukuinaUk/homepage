@@ -17,11 +17,11 @@ export default function LaTeX() {
         <p className="mx-auto max-w-[700px] text-lg text-muted-foreground">
           PCソフト(Windows)はこちらからダウンロードしてください。
         </p>
-        {<Button asChild>
-          <Link href="https://yanbarukuinauk.github.io/homepage/PC接続度ソフト_byBluetooth_v2.zip" download>
+        <Button asChild>
+          <a href="https://yanbarukuinauk.github.io/homepage/PC接続度ソフト_byBluetooth_v2.zip" download>
             ダウンロード
-          </Link>
-        </Button>}
+          </a>
+        </Button>
         <p>
           解凍後にexeファイルを起動してください。
         </p>
