@@ -8,7 +8,7 @@ function project_1() {
     <div className="container mx-auto px-4 py-16">
       <div className="flex flex-col items-center text-center space-y-8 mb-16">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-          コピペ あぷり　スマホ⇔PC
+          コピペ あぷり　スマホ ⇔ PC
         </h1>
         <h3>
           パソコンのキーボード入力が苦手な人に最適なアプリです！
