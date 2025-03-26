@@ -8,13 +8,13 @@ const projects = [
     id: "LaTeX_mobile",
     title: "LaTeX mobile アプリ",
     description: "スマホで簡単に数式が書けて，PCに送れる",
-    image: "/images/latex_mobile.png",
+    image: "https://yanbarukuinauk.github.io/homepage/images/latex_mobile.png",
   },
   {
     id: "copipe",
     title: "コピペアプリ",
     description: "パソコンのキーボード入力が苦手な人に最適なアプリです！",
-    image: "/images/copipe.png",
+    image: "https://yanbarukuinauk.github.io/homepage/images/copipe.png",
   },
   {
     id: "gakkai_timer",
