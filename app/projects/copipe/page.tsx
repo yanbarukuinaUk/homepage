@@ -1,17 +1,9 @@
-"use client"; // クライアントコンポーネントとして動作させる
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Github, Twitter } from "lucide-react"
+import Link from "next/link"
 
-import { Button } from "@/components/ui/button";
-import { saveAs } from "file-saver"; // ファイルダウンロード用
-import path from "path";
-
-export default function Project_1() {
-  // ダウンロード関数
-  const handleDownload = () => {
-    const filePath = "/files/PC接続度ソフト_byBluetooth_v2.zip";
-    const fileName = path.basename(filePath); // ファイル名を取得
-    saveAs(filePath, fileName); // ファイルを保存
-  };
-
+function project_1() {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="flex flex-col items-center text-center space-y-8 mb-16">
@@ -25,9 +17,44 @@ export default function Project_1() {
         <p className="mx-auto max-w-[700px] text-lg text-muted-foreground">
           PCソフト(Windows)はこちらからダウンロードしてください。
         </p>
-        <Button onClick={handleDownload}>ダウンロード</Button>
-        <p>解凍後にexeファイルを起動してください。</p>
+        {<Button asChild>
+          <Link href="https://yanbarukuinauk.github.io/homepage/PC接続度ソフト_byBluetooth_v2.zip" download>
+            ダウンロード
+          </Link>
+        </Button>}
+        <p>
+          解凍後にexeファイルを起動してください。
+        </p>
+      </div>
+
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <Card>
+          <CardContent className="p-6">
+            <h3 className="font-semibold mb-2">このアプリで出来ること</h3>
+            <p className="text-sm text-muted-foreground">
+              - スマホからパソコンにコピペできる
+              <br />- 逆向きもできる
+              <br />つまり,スマホのフリック入力を使ってPCに打ち込める
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+
+      <div className="mt-16 flex justify-center gap-4">
+        <Button variant="outline" asChild>
+          <Link href="https://github.com/yanbarukuinaUk/WindowsFormsBLEserver" target="_blank">
+            <Github className="h-4 w-4" />
+            <span className="sr-only">GitHub</span>
+          </Link>
+        </Button>
+      </div>
+
+      <div className="mt-16 text-center">
+        <p className="text-lg font-semibold">価格</p>
+        <p className="text-muted-foreground">100円で買い切り</p>
       </div>
     </div>
   );
 }
+
+export default project_1;
