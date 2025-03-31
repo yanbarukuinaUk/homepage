@@ -1,14 +1,36 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Github, Twitter } from "lucide-react"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Github } from "lucide-react";
+import Link from "next/link";
 
-function project_1() {
+const handleDownload = async () => {
+  const url = "https://yanbarukuinauk.github.io/homepage/PC接続度ソフト_byBluetooth_v2.zip";
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error("Network response was not ok");
+
+    const blob = await response.blob();
+    const objectUrl = window.URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = objectUrl;
+    a.download = "PC接続度ソフト_byBluetooth_v2.zip";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(objectUrl);
+  } catch (error) {
+    console.error("Download failed:", error);
+  }
+};
+
+function Project1() {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="flex flex-col items-center text-center space-y-8 mb-16">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-          コピペ あぷり　スマホ ⇔ PC
+          コピペ あぷり スマホ ⇔ PC
         </h1>
         <h3>
           パソコンのキーボード入力が苦手な人に最適なアプリです！
@@ -17,14 +39,8 @@ function project_1() {
         <p className="mx-auto max-w-[700px] text-lg text-muted-foreground">
           PCソフト(Windows)はこちらからダウンロードしてください。
         </p>
-        {<Button asChild>
-          <Link href="https://yanbarukuinauk.github.io/homepage/PC接続度ソフト_byBluetooth_v2.zip" download>
-            ダウンロード
-          </Link>
-        </Button>}
-        <p>
-          解凍後にexeファイルを起動してください。
-        </p>
+        <Button onClick={handleDownload}>ダウンロード</Button>
+        <p>解凍後にexeファイルを起動してください。</p>
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -57,4 +73,4 @@ function project_1() {
   );
 }
 
-export default project_1;
+export default Project1;
