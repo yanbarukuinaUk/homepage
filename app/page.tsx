@@ -24,12 +24,12 @@ export default function Home() {
               お問い合わせ
             </Link>
           </Button>
-          <Button variant="secondary" asChild>
+          {/* <Button variant="secondary" asChild>
             <Link href="/portfolio.zip">
               <Download className="mr-2 h-4 w-4" />
               ダウンロード
             </Link>
-          </Button>
+          </Button> */}
         </div>
       </div>
 

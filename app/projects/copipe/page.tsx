@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Github, Twitter } from "lucide-react"
+import { Github, Twitter, Download } from "lucide-react"
 import Link from "next/link"
 
 function project_1() {
@@ -17,8 +17,9 @@ function project_1() {
         <p className="mx-auto max-w-[700px] text-lg text-muted-foreground">
           PCソフト(Windows)はこちらからダウンロードしてください。
         </p>
-        {<Button asChild>
-          <Link href="https://yanbarukuinauk.github.io/homepage/PC接続度ソフト_byBluetooth_v2.zip" download>
+        {<Button variant="secondary" asChild>
+          <Link href="/portfolio.zip">
+            <Download className="mr-2 h-4 w-4" />
             ダウンロード
           </Link>
         </Button>}
