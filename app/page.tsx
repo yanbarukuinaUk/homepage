@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Github, Twitter } from "lucide-react"
+import { Github, Twitter, Download } from "lucide-react"
 import Link from "next/link"
 
 export default function Home() {
@@ -22,6 +22,12 @@ export default function Home() {
           <Button variant="outline" asChild>
             <Link href="/contact">
               お問い合わせ
+            </Link>
+          </Button>
+          <Button variant="secondary" asChild>
+            <Link href="/api/download" download="portfolio.zip">
+              <Download className="mr-2 h-4 w-4" />
+              ダウンロード
             </Link>
           </Button>
         </div>
