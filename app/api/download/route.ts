@@ -1,25 +1,19 @@
 import { NextResponse } from 'next/server';
-import JSZip from 'jszip';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
 export async function GET() {
   try {
-    const zip = new JSZip();
+    const filePath = join(process.cwd(), 'public', 'downloads', 'sample.zip');
+    const fileContent = readFileSync(filePath);
 
-    // サンプルファイルの内容を追加
-    zip.file("readme.txt", "ポートフォリオのサンプルファイルです。");
-    zip.file("sample.json", JSON.stringify({ name: "サンプルデータ" }, null, 2));
-
-    // ZIPファイルを生成
-    const content = await zip.generateAsync({ type: "uint8array" });
-
-    // レスポンスヘッダーを設定
     const headers = {
       'Content-Type': 'application/zip',
       'Content-Disposition': 'attachment; filename=portfolio.zip'
     };
 
-    return new NextResponse(content, { headers });
+    return new NextResponse(fileContent, { headers });
   } catch (error) {
-    return NextResponse.json({ error: "Failed to generate ZIP file" }, { status: 500 });
+    return NextResponse.json({ error: "Failed to read ZIP file" }, { status: 500 });
   }
 }
