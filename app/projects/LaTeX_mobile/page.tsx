@@ -17,15 +17,21 @@ export default function LaTeX() {
         <p className="mx-auto max-w-[700px] text-lg text-muted-foreground">
           PCソフト(Windows)はこちらからダウンロードしてください。
         </p>
-        <Button variant="secondary" asChild>
-          <Link href="/portfolio.zip">
+        {<Button variant="secondary" asChild>
+          <Link href="/スマホアプリと接続.zip">
             <Download className="mr-2 h-4 w-4" />
-            ダウンロード
+            PC側ダウンロード
           </Link>
-        </Button>
+        </Button>}
         <p>
           解凍後にexeファイルを起動してください。
         </p>
+        <Button variant="secondary" asChild>
+          <Link href="https://apps.apple.com/jp/app/latex-mobile/id6743998393">
+            <ExternalLink className="mr-2 h-4 w-4" />
+            スマホ側ダウンロード
+          </Link>
+        </Button>
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

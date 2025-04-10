@@ -23,14 +23,16 @@ function project_1() {
             PC側ダウンロード
           </Link>
         </Button>}
-        <Button variant="secondary" asChild>
-          <Link href="https://apps.apple.com/jp/app/latex-mobile/id6743998393">
-            スマホ側ダウンロード
-          </Link>
-        </Button>
         <p>
           解凍後にexeファイルを起動してください。
         </p>
+
+        <Button variant="secondary" asChild>
+          <Link href="https://apps.apple.com/jp/app/%E3%82%B3%E3%83%94%E3%83%9A-%E3%81%82%E3%81%B7%E3%82%8A/id6743671751">
+            <ExternalLink className="mr-2 h-4 w-4" />
+            スマホ側ダウンロード
+          </Link>
+        </Button>
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
