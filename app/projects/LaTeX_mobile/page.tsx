@@ -18,7 +18,7 @@ export default function LaTeX() {
           PCソフト(Windows)はこちらからダウンロードしてください。
         </p>
         {<Button variant="secondary" asChild>
-          <Link href="/スマホアプリと接続.zip">
+          <Link href="/スマホアプリと接続v3.zip">
             <Download className="mr-2 h-4 w-4" />
             PC側ダウンロード
           </Link>
@@ -62,6 +62,12 @@ export default function LaTeX() {
 
 
       <div className="mt-16 text-center">
+        <Button>
+          <Link href="https://apps.apple.com/jp/app/latex-mobile/id6743998393">
+            <ExternalLink className="mr-2 h-4 w-4" />
+            スマホ側ダウンロード
+          </Link>
+        </Button>
         <p className="text-muted-foreground">MITライセンス
           https://github.com/colinc86/LaTeXSwiftUI/blob/main/LICENSE.md</p>
         <p className="text-muted-foreground">MITライセンス

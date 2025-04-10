@@ -18,7 +18,7 @@ function project_1() {
           PCソフト(Windows)はこちらからダウンロードしてください。
         </p>
         {<Button variant="secondary" asChild>
-          <Link href="/スマホアプリと接続.zip">
+          <Link href="/スマホアプリと接続v3.zip">
             <Download className="mr-2 h-4 w-4" />
             PC側ダウンロード
           </Link>
