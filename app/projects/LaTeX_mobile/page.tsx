@@ -59,6 +59,17 @@ export default function LaTeX() {
         <p className="text-lg font-semibold">価格</p>
         <p className="text-muted-foreground">数百円/月でサブスクにする予定です。</p>
       </div>
+
+
+      <div className="mt-16 text-center">
+        <p className="text-muted-foreground">MITライセンス
+          https://github.com/colinc86/LaTeXSwiftUI/blob/main/LICENSE.md</p>
+        <p className="text-muted-foreground">MITライセンス
+          https://github.com/TimOliver/TOCropViewController/blob/main/LICENSE</p>
+
+
+      </div>
     </div>
+
   );
 }
