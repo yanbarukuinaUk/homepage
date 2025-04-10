@@ -23,11 +23,11 @@ function project_1() {
             PC側ダウンロード
           </Link>
         </Button>}
-        <Button variant="secondary" asChild>
+        {/* <Button variant="secondary" asChild>
           <Link href="https://apps.apple.com/jp/app/latex-mobile/id6743998393">
             スマホ側ダウンロード
           </Link>
-        </Button>
+        </Button> */}
         <p>
           解凍後にexeファイルを起動してください。
         </p>
