@@ -63,15 +63,16 @@ export default function LaTeX() {
 
       <div className="mt-16 text-center">
 
-        <Link href="https://apps.apple.com/jp/app/latex-mobile/id6743998393">
-          <ExternalLink className="mr-2 h-4 w-4" />
-          スマホ側ダウンロード
+        <Link href="https://github.com/colinc86/LaTeXSwiftUI/blob/main/LICENSE.md">
+          <p className="text-muted-foreground">MITライセンス
+            https://github.com/colinc86/LaTeXSwiftUI/blob/main/LICENSE.md</p>
+        </Link>
+        <Link href="https://github.com/TimOliver/TOCropViewController/blob/main/LICENSE">
+          <p className="text-muted-foreground">MITライセンス
+            https://github.com/TimOliver/TOCropViewController/blob/main/LICENSE</p>
         </Link>
 
-        <p className="text-muted-foreground">MITライセンス
-          https://github.com/colinc86/LaTeXSwiftUI/blob/main/LICENSE.md</p>
-        <p className="text-muted-foreground">MITライセンス
-          https://github.com/TimOliver/TOCropViewController/blob/main/LICENSE</p>
+
 
 
       </div>
