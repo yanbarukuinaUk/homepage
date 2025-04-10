@@ -41,6 +41,7 @@ export default function LaTeX() {
             <p className="text-sm text-muted-foreground">
               - LaTeXに数式を転送できる
               <br />- 簡単に数式が打てる
+              <br />- 画像認識で数式を入力できる
             </p>
           </CardContent>
         </Card>
