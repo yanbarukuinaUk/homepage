@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Github, Twitter, Download } from "lucide-react"
+import { Github, Twitter, Download, ExternalLink } from "lucide-react"
 import Link from "next/link"
 
 

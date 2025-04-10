@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Github, Twitter } from "lucide-react"
+import { Github, Twitter, ExternalLink } from "lucide-react"
 import Link from "next/link"
 
 function gakkaitimer() {
@@ -11,7 +11,7 @@ function gakkaitimer() {
           学会・プレゼンタイマー
         </h1>
         <h3>
-          スマホで入力してPCに転送
+          シンプルなデザインで使いやすい
         </h3>
 
       </div>
@@ -32,7 +32,7 @@ function gakkaitimer() {
             <p className="text-sm text-muted-foreground">
               - 「何分」経過で「何回」鳴らすのか　設定
               <br />- Startボタンを押すとタイマー開始！
-              <br />- 以上 (+α. ベルをタップすると手動でも鳴らせる)
+              <br />-  (+α. ベルをタップすると手動でも鳴らせる)
             </p>
           </CardContent>
         </Card>
@@ -40,12 +40,12 @@ function gakkaitimer() {
 
 
       <div className="mt-16 flex justify-center gap-4">
-        {/* <Button variant="outline" asChild>
-          <Link href="https://github.com/yanbarukuinaUk/WindowsFormsBLEserver" target="_blank">
-            <Github className="h-4 w-4" />
-            <span className="sr-only">GitHub</span>
+        <Button variant="secondary" asChild>
+          <Link href="https://apps.apple.com/jp/app/%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3-%E5%AD%A6%E4%BC%9A%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC/id6743424506">
+            <ExternalLink className="mr-2 h-4 w-4" />
+            スマホアプリをダウンロード
           </Link>
-        </Button> */}
+        </Button>
       </div>
 
       <div className="mt-16 text-center">
