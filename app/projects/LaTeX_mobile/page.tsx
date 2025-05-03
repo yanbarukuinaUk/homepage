@@ -18,7 +18,7 @@ export default function LaTeX() {
           PCソフト(Windows)はこちらからダウンロードしてください。
         </p>
         {<Button>
-          <Link href="/スマホアプリと接続v3.zip">
+          <Link href="/スマホアプリと接続v4.zip">
             <Download className="mr-2 h-4 w-4" />
             PC側ダウンロード
           </Link>

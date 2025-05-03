@@ -18,7 +18,7 @@ function project_1() {
           PCソフト(Windows)はこちらからダウンロードしてください。
         </p>
         {<Button>
-          <Link href="/スマホアプリと接続v3.zip">
+          <Link href="/スマホアプリと接続v4.zip">
             <Download className="mr-2 h-4 w-4" />
             PC側ダウンロード
           </Link>
@@ -58,8 +58,8 @@ function project_1() {
       </div>
 
       <div className="mt-16 text-center">
-        <p className="text-lg font-semibold">価格</p>
-        <p className="text-muted-foreground">100円で買い切り</p>
+        <p className="text-lg font-semibold">利用料金なし　無料</p>
+        <p className="text-muted-foreground"></p>
       </div>
     </div>
   );
